@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Scotours | HOME</title>
+		<link rel="stylesheet" href="./css/one_page_website.css">
 	</head>
 	<body>
 	
@@ -13,6 +14,7 @@
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#gallery" id="link"><li>GALLERY</li></a>
 					<a href="#contact" id="link"><li>CONTACT US</li></a>
+					<a href="#video" id="link"><li>VIDEO</li></a>
 				</ul>
 			</div>
 		</div>
@@ -40,7 +42,7 @@
 							<img src="./images/thumb/thumbnail_1.jpg" alt="scotland image 1">
 							<div>
 								<h1>Click to Enlarge</h1>
-								<p>We have several trips departing daily, book your adventure today!</p>
+								<p class="image-text">We have several trips departing daily, book your adventure today!</p>
 							</div>
 						</div>
 					</div>
@@ -52,7 +54,7 @@
 							<img src="./images/thumb/thumbnail_2.jpg" alt="scotland image 2">
 							<div>
 								<h1>Click to Enlarge</h1>
-								<p>We have several trips departing daily, book your adventure today!</p>
+								<p class="image-text">We have several trips departing daily, book your adventure today!</p>
 							</div>
 						</div>
 					</div>
@@ -64,7 +66,7 @@
 							<img src="./images/thumb/thumbnail_3.jpg" alt="scotland image 3">
 							<div>
 								<h1>Click to Enlarge</h1>
-								<p>We have several trips departing daily, book your adventure today!</p>
+								<p class="image-text">We have several trips departing daily, book your adventure today!</p>
 							</div>
 						</div>
 					</div>
@@ -76,7 +78,7 @@
 							<img src="./images/thumb/thumbnail_4.jpg" alt="scotland image 4">
 							<div>
 								<h1>Click to Enlarge</h1>
-								<p>We have several trips departing daily, book your adventure today!</p>
+								<p class="image-text">We have several trips departing daily, book your adventure today!</p>
 							</div>
 						</div>
 					</div>
@@ -88,7 +90,7 @@
 							<img src="./images/thumb/thumbnail_5.jpg" alt="scotland image 5">
 							<div>
 								<h1>Click to Enlarge</h1>
-								<p>We have several trips departing daily, book your adventure today!</p>
+								<p class="image-text">We have several trips departing daily, book your adventure today!</p>
 							</div>
 						</div>
 					</div>
@@ -100,7 +102,7 @@
 							<img src="./images/thumb/thumbnail_6.jpg" alt="scotland image 6">
 							<div>
 								<h1>Click to Enlarge</h1>
-								<p>We have several trips departing daily, book your adventure today!</p>
+								<p class="image-text">We have several trips departing daily, book your adventure today!</p>
 							</div>
 						</div>
 					</div>
@@ -112,7 +114,7 @@
 							<img src="./images/thumb/thumbnail_7.jpg" alt="scotland image 7">
 							<div>
 								<h1>Click to Enlarge</h1>
-								<p>We have several trips departing daily, book your adventure today!</p>
+								<p class="image-text">We have several trips departing daily, book your adventure today!</p>
 							</div>
 						</div>
 					</div>
@@ -124,7 +126,7 @@
 							<img src="./images/thumb/thumbnail_8.jpg" alt="scotland image 8">
 							<div>
 								<h1>Click to Enlarge</h1>
-								<p>We have several trips departing daily, book your adventure today!</p>
+								<p class="image-text">We have several trips departing daily, book your adventure today!</p>
 							</div>
 						</div>
 					</div>
@@ -136,7 +138,7 @@
 							<img src="./images/thumb/thumbnail_9.jpg" alt="scotland image 9">
 							<div>
 								<h1>Click to Enlarge</h1>
-								<p>We have several trips departing daily, book your adventure today!</p>
+								<p class="image-text">We have several trips departing daily, book your adventure today!</p>
 							</div>
 						</div>
 					</div>
@@ -149,42 +151,45 @@
 		<!-- END GALLERY -->
 		
 		<!-- Contact -->
-		<section>
-			<div id="contact">
-				<div>
-					<h1>Contact Us</h1>
-					<div>
-						<h2><span>You adventure is just around the coo.</span>
-							<br />Start your Highland tour today!
+		<!-- RSVP -->
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class= "heading-padding">Contact Us</h1>
+					<div class="reservation">
+						<h2>
+							<span>Your adventure is just around the coo.</span>
+							<br/>Reserve your trip today!
 						</h2>
-						<p>
-							Please provide us with your basic contact information.
+						<p class="rsvp-text">
+							Please provide us with your basic contact information
 						</p>
-						<div>
+						<div class="form-rsvp">
 							<form action="" method="post">
-								<input class="contact" type="text" value="First Name">
-								<input class="contact" type="text" value="Last Name">
-								<input class="contact" type="text" value="Email Address">
-								<input class="contact" type="text" value="Phone Number">
-								<div class="form-spacer">
-									<label class="terms">Terms and Conditions</label>
-								</div>
-								<div>
-									<input type="submit" value="Submit">
-								</div>
+									<input class="rsvp" type="text" value="" placeholder="First Name">
+									<input class="rsvp" type="text" value="" placeholder="Last Name">
+									<input class="rsvp" type="text" value="" placeholder="Email Address">
+									<input class="rsvp" type="text" value="" placeholder="Phone Number">
+									</div>
+									<div class="submit">
+										<input type="submit" value="Submit">
+									</div>
 							</form>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</div>		
+			</section>
 		<!-- END RSVP -->
 		
 		<!-- VIDEO -->
-		<section> 
+		<section id="video"> 
+			<center>
 			<h2>Still not convinced? Listen to Billy Connelly!</h2>
 			<br>
-			<iframe width="560" height="315" src="https://www.youtube.com/watch?v=4Rva-H3EWEA&pp=ygUOYmlsbHkgY29ubmVsbHk%3D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/4Rva-H3EWEA?si=vZGcXFNNBpxZ_cPK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</center>
+		</section>
 		<!--FOOTER -->
 		<div>
 		<br>
