@@ -19,6 +19,42 @@ body {
     background-color: #fff;
 }
 
+
+/* NAVIGATION */
+nav {
+  background-color: #13161B;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  margin: 0;
+  gap: 3rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #f9d342;
+  color: #13161B;
+}
+
+
 h1 {
     font-weight: 900;
     font-size: 30px;
@@ -26,10 +62,41 @@ h1 {
     color: #0800ff;
 }
 
+#home {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 4rem; 
+  font-weight: 900; 
+  color: #000000;   
+  font-family: 'Roboto', sans-serif;
+}
+
+
 
 /*--------------
   IMAGES
   ------------------*/
+#gallery > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; /* spacing between items */
+  padding: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #gallery > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #gallery > div {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
   img {
     display: block;
@@ -196,3 +263,5 @@ CONTACT FORM STYLES
     color: #000;
     box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
 }
+
+

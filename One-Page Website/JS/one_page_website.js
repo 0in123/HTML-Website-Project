@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Create lightbox elements
     const lightbox = document.createElement("div");
     lightbox.id = "lightbox";
     document.body.appendChild(lightbox);
@@ -8,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
     lightboxImage.id = "lightbox-img";
     lightbox.appendChild(lightboxImage);
 
-    // Lightbox styling
     Object.assign(lightbox.style, {
         position: "fixed",
         top: 0,
@@ -30,18 +28,16 @@ document.addEventListener("DOMContentLoaded", function () {
         borderRadius: "8px"
     });
 
-    // Show lightbox on image click
     const galleryImages = document.querySelectorAll("#gallery img");
     galleryImages.forEach(img => {
         img.style.cursor = "pointer";
         img.addEventListener("click", () => {
-            const fullSrc = img.src.replace("thumb/", ""); // assumes full-size images in ./images/
+            const fullSrc = img.getAttribute("data-full");
             lightboxImage.src = fullSrc;
             lightbox.style.display = "flex";
         });
     });
 
-    // Close on outside click or ESC
     lightbox.addEventListener("click", () => {
         lightbox.style.display = "none";
         lightboxImage.src = "";
